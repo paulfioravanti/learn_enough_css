@@ -1,0 +1,15 @@
+<div class="blog-posts">
+  <header class="post-header">
+    <h2><a href="{{ include.post.url }}">{{ include.post.title }}</a></h2>
+    <div class="post-byline">
+      <img src="{{ include.post.gravatar }}">
+      <a href="{{ include.post.authorTwitter }}" class="social-link">Tw</a>
+      by: {{ include.post.author }}
+      <span> - {{ include.post.date | date: '%B %d, %Y' }}</span>
+    </div>
+  </header>
+  <div class="posts-image" style="background-image:url({{ include.post.postHero }})">
+  </div>
+  {{ include.post.excerpt }}
+  <a href="{{ include.post.url }}">Read More</a>
+</div>
