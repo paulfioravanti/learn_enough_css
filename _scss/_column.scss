@@ -1,0 +1,40 @@
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.col-two {
+  display: flex;
+
+  .col-aside {
+    flex: 0 0 20em;
+    order: 1;
+  }
+
+  .col-content {
+    flex: 1;
+  }
+}
+
+.col-three {
+  display: flex;
+  flex: 1;
+  // flex: 1 1 0;
+
+  .col ~ .col {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .col-aside {
+    flex: 0 1 20em;
+  }
+
+  .col-content {
+    flex: 1 1 0;
+    // flex: 1;
+  }
+
+  .col-nav {
+    flex: 0 1 15em;
+  }
+}

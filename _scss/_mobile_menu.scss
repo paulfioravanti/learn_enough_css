@@ -1,0 +1,82 @@
+.mobile-menu-check {
+  display: none;
+
+  @media (max-width: 800px) {
+    &:checked {
+      & ~ .header-nav {
+        max-height: 1000px;
+      }
+
+      & ~ .show-mobile-menu:after {
+        background-color: #000;
+        color: #ed6e2f;
+        content: "CLOSE";
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 1.5em;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.show-mobile-menu {
+  display: none;
+
+  @media (max-width: 800px) {
+    display: block;
+    float: right;
+    font-weight: bold;
+    margin-top: 1.5vh;
+    padding: 1.5em;
+    position: relative;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-nav {
+    background-color: #444;
+    box-sizing: border-box;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 10vh;
+    transition: all 0.5s ease-in-out;
+    width: 100vw;
+    z-index: 9;
+
+    li {
+      display: block;
+      margin: 1em 0 0;
+      padding: 0;
+
+      & ~ li {
+        border: 0;
+        padding: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 1em;
+      }
+
+      &:first-child a {
+        color: #fff;
+      }
+    }
+  }
+
+  /* hide dropdown in the nav menu */
+  .header-nav .dropdown:hover .drop-menu,
+  .header-nav .drop-trigger:after {
+    display: none;
+  }
+
+  .header-nav .drop-trigger {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,30 @@
+.footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+
+  h3 {
+    color: #fff;
+    padding-top: 1.5em;
+    text-transform: uppercase;
+
+    span {
+      color: #aaa;
+    }
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+.footer-nav {
+  a {
+    color: #ccc;
+  }
+
+  li {
+    display: inline-block;
+    margin: 2em 1em 0;
+  }
+}
