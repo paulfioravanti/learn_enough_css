@@ -6,8 +6,8 @@
       display: block;
     }
 
-    .drop-trigger:after {
-      border-color: #ed6e2f transparent transparent;
+    .drop-trigger::after {
+      border-color: $orange transparent transparent;
     }
   }
 }
@@ -17,9 +17,9 @@
   padding-right: 1.5em;
   position: relative;
 
-  &:after {
+  &::after {
     border: 0.3em solid;
-    border-color: #fff transparent transparent;
+    border-color: $white transparent transparent;
     content: "";
     height: 0;
     position: absolute;
@@ -30,7 +30,7 @@
 }
 
 .drop-menu {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 0 $light-shadow;
   display: none;
   list-style: none;
   padding: 1em 0 0;
@@ -38,9 +38,9 @@
   right: 0;
   z-index: 9;
 
-  &:before {
+  &::before {
     border: 0.6em solid;
-    border-color: transparent transparent #fff;
+    border-color: transparent transparent $white;
     content: "";
     height: 0;
     position: absolute;
@@ -50,7 +50,7 @@
   }
 
   a {
-    color: #333;
+    color: $darker-grey;
     display: block;
     font-weight: normal;
     padding: 0.5em 2em 0.5em 1em;
@@ -59,23 +59,23 @@
     white-space: nowrap;
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-      color: #333;
+      background-color: $transparent-black;
+      color: $darker-grey;
     }
   }
 
   li {
-    background-color: #fff;
+    background-color: $white;
     font-size: 0.5rem;
 
-    & ~ li {
-      border-top: 1px dotted rgba(0, 0, 0, 0.1);
+    ~ li {
+      border-top: 1px dotted $transparent-black;
       font-size: 0.2rem;
     }
 
     &:first-child {
       border-radius: 5px 5px 0 0;
-      color: #999;
+      color: $light-grey;
       font-weight: 0.5em;
       padding: 1em 1em 0.25em;
       text-align: right;
@@ -89,9 +89,9 @@
 }
 
 .footer {
-  /* Hide menu in the footer */
+  // Hide menu in the footer
   .dropdown:hover .drop-menu,
-  .drop-trigger:after {
+  .drop-trigger::after {
     display: none;
   }
 

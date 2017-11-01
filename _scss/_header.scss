@@ -1,6 +1,6 @@
 .header {
-  background-color: #000;
-  color: #fff;
+  background-color: $black;
+  color: $white;
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -11,7 +11,7 @@
 }
 
 .header-logo {
-  background-color: #000;
+  background-color: $black;
   box-sizing: border-box;
   display: block;
   height: 10vh;
@@ -23,7 +23,7 @@
 
   &:hover,
   &:active {
-    background-color: #ed6e2f;
+    background-color: $orange;
   }
 
   img {
@@ -40,7 +40,7 @@
     padding: 2vh 1em 0 0;
   }
 
-  & > li {
+  > li {
     display: inline-block;
     margin-left: 1em;
 
@@ -49,15 +49,15 @@
     }
 
     &:first-child a {
-      color: #ed6e2f;
+      color: $orange;
 
       &:hover {
-        color: #fff;
+        color: $white;
       }
     }
 
-    & ~ li {
-      border-left: 1px solid rgba(255, 255, 255, 0.3);
+    ~ li {
+      border-left: 1px solid $very-transparent-white;
       padding-left: 1em;
 
       @media (max-width: 800px) {
@@ -67,7 +67,7 @@
   }
 
   a {
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -79,8 +79,9 @@
 }
 
 .drop-trigger {
-  color: #fff;
   @extend %nav-links;
+
+  color: $white;
 }
 
 .nav-links a {
@@ -88,11 +89,10 @@
 
   &:hover,
   &:active {
-    color: #ed6e2f;
+    color: $orange;
   }
 
   @media (max-width: 800px) {
     font-size: 3.25vw;
   }
 }
-

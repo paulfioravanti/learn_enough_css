@@ -1,0 +1,10 @@
+scss_files: "_scss/**/*.scss"
+
+linters:
+  LeadingZero:
+    style: include_zero
+  # Max depth added due to styling of header
+  NestingDepth:
+    max_depth: 4
+  StringQuotes:
+    style: double_quotes

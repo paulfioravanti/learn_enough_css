@@ -8,6 +8,8 @@ tutorial.
 
 - Changed the CSS code to be SCSS and configured Jekyll to serve those files
   out of the `_scss` directory via the `_config.yml` file.
+- Use [`scss-lint`](https://github.com/brigade/scss-lint) to bring the CSS
+  up to community standards.
 - Minor Jekyll syntax changes to use `include` variable in `post_excerpt.html`
   so that re-use of that partial is easier between the pages that use it.
 - Registered for an account on [Font Awesome](http://fontawesome.io/) and got

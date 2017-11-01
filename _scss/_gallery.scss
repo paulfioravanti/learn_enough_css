@@ -23,7 +23,7 @@
   height: 90vh;
   overflow: scroll;
 
-  & > div {
+  > div {
     cursor: pointer;
 
     @media (max-width: 800px) {
@@ -32,10 +32,10 @@
   }
 
   img {
-    box-sizing: border-box;
     box-shadow: 0 0 0 5px transparent;
+    box-sizing: border-box;
     display: inline-block;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     opacity: 0.5;
     transition: all 0.5s ease-in-out;
     width: 100%;
@@ -52,7 +52,7 @@
   }
 
   .current img {
-    box-shadow: 0 0 0 5px #ed6e2f;
+    box-shadow: 0 0 0 5px $orange;
     opacity: 1;
   }
 }

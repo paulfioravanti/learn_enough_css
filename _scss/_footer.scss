@@ -1,15 +1,15 @@
 .footer {
-  background-color: #000;
+  background-color: $black;
   padding: 10vh 0 15vh;
   text-align: center;
 
   h3 {
-    color: #fff;
+    color: $white;
     padding-top: 1.5em;
     text-transform: uppercase;
 
     span {
-      color: #aaa;
+      color: $dark-light-grey;
     }
   }
 
@@ -20,7 +20,7 @@
 
 .footer-nav {
   a {
-    color: #ccc;
+    color: $footer-link-color;
   }
 
   li {

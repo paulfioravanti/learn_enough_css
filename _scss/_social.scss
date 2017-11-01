@@ -1,8 +1,8 @@
 .social-link {
-  background: rgba(150, 150, 150, 0.5);
+  background: $transparent-grey;
   border-radius: 99px;
   box-sizing: border-box;
-  color: white;
+  color: $white;
   display: inline-block;
   font-family: helvetica, arial, sans;
   font-size: 1.7em;
@@ -20,7 +20,7 @@
   padding: 0;
   text-align: center;
 
-  & > li {
+  > li {
     display: inline-block;
     margin: 0 0.5em;
   }

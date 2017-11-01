@@ -1,16 +1,16 @@
 .full-hero {
-  background-color: #c7dbfc;
+  background-color: $ocean-color;
   background-size: cover;
   box-sizing: border-box;
   height: 90vh;
 
-  &:after {
+  &::after {
     border: 10px solid;
-    border-color: #fff transparent transparent;
-    color: #fff;
-    /* content: "﹀"; */
-    content: "";
+    border-color: $white transparent transparent;
     bottom: 2vh;
+    color: $white;
+    // content: "﹀";
+    content: "";
     height: 0;
     left: 50%;
     position: absolute;
@@ -20,7 +20,7 @@
 }
 
 .hero-home {
-  background-image: url(/images/shark.jpg);
+  background-image: url("/images/shark.jpg");
   background-position: center top;
 }
 
@@ -31,19 +31,19 @@
   transform: translate(0, -50%);
 
   h1 {
-    color: rgba(255, 255, 255, 0.8);
+    color: $transparent-white;
     font-size: 7vh;
     margin-bottom: 0.25em;
     text-transform: uppercase;
   }
 
   .social-link {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #556c83;
+    background-color: $transparent-white;
+    color: $violet;
 
     &:hover {
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white;
     }
   }
 }
