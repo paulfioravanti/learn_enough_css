@@ -17,4 +17,15 @@ tutorial.
   `<head>` (simliar to the way the Google fonts are referenced), and got rid
   of the `fonts` folder to lighten up the app a little.
 - Rather than Github pages, deploy the blog to Heroku
-  [here](http://learn-enough-css.herokuapp.com/).
+  [here](http://learn-enough-css.herokuapp.com/). Deploy it for yourself with
+  the button below.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+## Social
+
+[![Contact](https://img.shields.io/badge/contact-%40paulfioravanti-blue.svg)](https://twitter.com/paulfioravanti)
+
+<a href="http://stackoverflow.com/users/567863/paul-fioravanti">
+  <img src="http://stackoverflow.com/users/flair/567863.png" width="208" height="58" alt="profile for Paul Fioravanti at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Paul Fioravanti at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
