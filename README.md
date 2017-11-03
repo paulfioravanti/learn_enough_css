@@ -16,3 +16,5 @@ tutorial.
   [a CSS embed code](http://fontawesome.io/get-started/), referenced it in the
   `<head>` (simliar to the way the Google fonts are referenced), and got rid
   of the `fonts` folder to lighten up the app a little.
+- Rather than Github pages, deploy the blog to Heroku
+  [here](http://learn-enough-css.herokuapp.com/).
