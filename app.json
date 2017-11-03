@@ -1,7 +1,7 @@
 {
-  "name": "Learn Enough CSS & Layout to Be Dangerous",
+  "name": "Learn Enough CSS",
   "description": "A sample website for Learn Enough CSS & Layout to Be Dangerous",
   "repository": "https://github.com/paulfioravanti/learn_enough_css",
-  "logo": "cdn.learnenough.com/le-css/logo.png",
+  "logo": "https://s3-us-west-2.amazonaws.com/learnenough/le-css/logo.png",
   "keywords": ["css", "hartl", "tutorial"]
 }
